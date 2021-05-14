@@ -16,6 +16,7 @@ import { PrivadoSideBarComponent } from './components/privado-side-bar/privado-s
 import { PrivadoMisProductosComponent } from './components/privado-mis-productos/privado-mis-productos.component';
 import { PrivadoProductosComponent } from './components/privado-productos/privado-productos.component';
 import { PrivadoCrearProductoComponent } from './components/privado-crear-producto/privado-crear-producto.component';
+import { PrivadoPerfilProductoComponent } from './components/privado-perfil-producto/privado-perfil-producto.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { PrivadoCrearProductoComponent } from './components/privado-crear-produc
     PrivadoSideBarComponent,
     PrivadoMisProductosComponent,
     PrivadoProductosComponent,
-    PrivadoCrearProductoComponent
+    PrivadoCrearProductoComponent,
+    PrivadoPerfilProductoComponent
   ],
   imports: [
     BrowserModule,

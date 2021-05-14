@@ -1,3 +1,4 @@
+import { PrivadoPerfilProductoComponent } from './components/privado-perfil-producto/privado-perfil-producto.component';
 import { PrivadoMisProductosComponent } from './components/privado-mis-productos/privado-mis-productos.component';
 import { PrivadoProductosComponent } from './components/privado-productos/privado-productos.component';
 import { PrivadoComponent } from './components/privado/privado.component';
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path:"privado", component:PrivadoComponent, children:[
     {path:"", component:PrivadoProductosComponent},
     {path:"productos", component:PrivadoProductosComponent},
+    {path:"productos/detalle/:idProducto", component:PrivadoPerfilProductoComponent},
     {path:"mis-productos", component:PrivadoMisProductosComponent},
     {path:"crear-producto", component:PrivadoCrearProductoComponent},
   ] },
