@@ -1,0 +1,40 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "juan",
+      "correo": "juan@gmail.com",
+      "password": "1234"
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Silla Of Gamer Kevin",
+      "marca": "Kevin",
+      "precio": 249990,
+      "imagen": "https://falabella.scene7.com/is/image/Falabella/881999543_1?wid=1500&hei=1500&qlt=70"
+    },
+    {
+      "id": 2,
+      "nombre": "Silla Gamer Cougar Armor One Black Pro Gaming",
+      "marca": "Cougar",
+      "precio": 249990,
+      "imagen": "https://falabella.scene7.com/is/image/Falabella/15119092_1?wid=1500&hei=1500&qlt=70"
+    },
+    {
+      "nombre": "test",
+      "marca": "prueba",
+      "precio": 2000,
+      "imagen": "https://falabella.scene7.com/is/image/Falabella/15080968_1?wid=1500&hei=1500&qlt=70",
+      "id": 3
+    },
+    {
+      "nombre": "Air Force 1 07 High Zapatilla Urbana Hombre",
+      "marca": "Nike",
+      "precio": 99990,
+      "imagen": "https://falabella.scene7.com/is/image/Falabella/15117218_1?wid=1500&hei=1500&qlt=70",
+      "id": 4
+    }
+  ]
+}

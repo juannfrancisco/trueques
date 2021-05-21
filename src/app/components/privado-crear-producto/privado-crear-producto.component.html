@@ -1,1 +1,35 @@
-<p>privado-crear-producto works!</p>
+<div class="container-fluid p-4">
+
+    <h3>Crear Producto</h3>
+
+    <div class="card" >
+
+        <div class="card-body" >
+
+            <div class="mb-3" >
+                <label class="form-label">Nombre Producto</label>
+                <input type="text" class="form-control" [(ngModel)]="nombreProducto" >
+            </div>
+
+            <div class="mb-3" >
+                <label class="form-label">Marca</label>
+                <input type="text" class="form-control" [(ngModel)]="marca" >
+            </div>
+            
+            <div class="mb-3" >
+                <label class="form-label">Precio</label>
+                <input type="number" class="form-control" [(ngModel)]="precio" >
+            </div>
+
+            <div class="mb-3" >
+                <label class="form-label">Imagen</label>
+                <input type="text" class="form-control" [(ngModel)]="imagen">
+            </div>
+
+        </div>
+        <div class="card-footer" >
+            <button class="btn btn-primary" (click)="crearProducto()" >Crear Producto</button>
+        </div>
+
+    </div>
+</div>

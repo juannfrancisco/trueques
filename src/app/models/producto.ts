@@ -1,13 +1,14 @@
 import { Direccion } from './direccion';
 export interface Producto {
 
-    id:number;
+    id?:number;
     nombre:string;
-    descripcion:string;
+    marca?:string;
+    descripcion?:string;
     precio:number;
-    estado:string; // Nuevo / Usado
-    tamanio:string;
-    imagen:string;
+    estado?:string; // Nuevo / Usado
+    tamanio?:string;
+    imagen?:string;
     direccion?:Direccion;
 
 }

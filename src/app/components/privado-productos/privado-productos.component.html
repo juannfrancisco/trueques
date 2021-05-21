@@ -13,7 +13,7 @@
                     <a href="#" class="btn btn-primary">{{p.precio | currency }}</a>
                 </div>
                 <div class="card-footer" >
-                    <a class="btn btn-secondary" routerLink="'/privado/productos/detalle/'+p.id">Ver Producto</a>
+                    <a class="btn btn-secondary" [routerLink]="['/privado', 'productos', 'detalle',p.id]">Ver Producto</a>
                 </div>
             </div>
         </div>
