@@ -24,4 +24,12 @@ export class ProductosJsonServerService {
     return this.http.post( "http://localhost:3000/productos", producto );
   }
 
+  editarProducto( producto:Producto ){
+    return this.http.put( "http://localhost:3000/productos/"+ producto.id, producto );
+  }
+
+  eliminarProducto( producto:Producto ){
+    return this.http.delete( "http://localhost:3000/productos/" + producto.id );
+  }
+
 }

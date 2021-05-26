@@ -19,6 +19,8 @@ import { PrivadoCrearProductoComponent } from './components/privado-crear-produc
 import { PrivadoPerfilProductoComponent } from './components/privado-perfil-producto/privado-perfil-producto.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { UsuariosComponent } from './components/usuarios/usuarios.component';
+import { PrivadoEditarProductoComponent } from './components/privado-editar-producto/privado-editar-producto.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { FormsModule } from '@angular/forms';
     PrivadoMisProductosComponent,
     PrivadoProductosComponent,
     PrivadoCrearProductoComponent,
-    PrivadoPerfilProductoComponent
+    PrivadoPerfilProductoComponent,
+    UsuariosComponent,
+    PrivadoEditarProductoComponent
   ],
   imports: [
     BrowserModule,

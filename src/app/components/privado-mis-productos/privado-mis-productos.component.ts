@@ -1,3 +1,5 @@
+import { ProductosJsonServerService } from './../../services/productos-json-server.service';
+import { Producto } from './../../models/producto';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrivadoMisProductosComponent implements OnInit {
 
-  constructor() { }
+  productos:Producto[] = [];
+
+  constructor( private servicio: ProductosJsonServerService ) { }
 
   ngOnInit(): void {
+    this.cargarProductos();
+  }
+
+  cargarProductos(){
+    this.servicio.obtenerTodosLosProductos().subscribe( productosServidor =>{
+      this.productos = productosServidor;
+    });
+  }
+
+  eliminarProducto( producto:Producto ){
+    this.servicio.eliminarProducto( producto ).subscribe( respuesta =>{
+      alert( "Producto Eliminado" );
+      this.cargarProductos();
+    } );
+
+    
   }
 
 }

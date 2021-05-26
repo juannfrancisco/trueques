@@ -4,6 +4,37 @@
             <div class="card-body">
                 <h4>Registro de Usuario</h4>
                 <hr>
+
+                <div class="mb-3" >
+                    <label>Nombre</label>
+                    <input type="email" [(ngModel)]="nombre"  class="form-control">
+                </div>
+
+                <div class="mb-3" >
+                    <label>Correo</label>
+                    <input type="email" [(ngModel)]="correo" class="form-control">
+                </div>
+
+                <div class="mb-3" >
+                    <label>Contraseña</label>
+                    <input type="password" [(ngModel)]="password" class="form-control">
+                </div>
+
+                <div class="mb-3" >
+                    <label>Confirmar Contraseña</label>
+                    <input type="password" [(ngModel)]="repassword" class="form-control">
+                </div>
+
+                <div class="mb-3" >
+                    <label>Edad</label>
+                    <input type="number" [(ngModel)]="edad" class="form-control">
+                </div>
+
+                <div class="mb-3" >
+                    <button class="btn btn-primary" (click)="registro()" >Crear Cuenta</button>
+                </div>
+
+
             </div>
         </div>
     </div>
